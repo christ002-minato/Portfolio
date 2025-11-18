@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
+import { DownloadCloud } from 'lucide-react';
 import { Shield, Terminal, Lock, Network, Globe, Server, Eye, FileCheck, Mail, Phone, MapPin, Linkedin, Github, GraduationCap, Award, Calendar } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
-import koffi_amalaman from './assets/Koffi_amalaman.jpeg'
-import le_groupe from './assets/le_groupe.jpeg'
-import equipe from './assets/equipe.jpeg'
+import koffi_amalaman from './assets/Koffi_amalaman.jpeg';
+import le_groupe from './assets/le_groupe.jpeg';
 
 
 const skills = [
@@ -448,6 +448,27 @@ export function SecurityWorld() {
                   </div>
                 </div>
               </motion.a>
+
+             
+              <motion.a
+                 href="/src/components/CV/Koffi_Amalaman_Christ_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
+                download="Koffi_Amalaman_Christ_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
+                className="cyber-card group cursor-pointer"
+                whileHover={{ scale: 1.05, x: 10 }}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-green-400/10 rounded-lg border border-green-400/30">
+                    <DownloadCloud className="w-6 h-6 text-green-400" />
+                  </div>
+                  <div>
+                    <p className="text-white">Mon cv</p>
+                  </div>
+                </div>
+              </motion.a>
+
+
+
+
 
               <motion.a
                 href="tel:+2250565283279"

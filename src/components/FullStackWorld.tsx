@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { DownloadCloud } from 'lucide-react';
 import { Code, Database, Server, Smartphone, Palette, Boxes, Ticket, Trello, Globe, Mail, Phone, Linkedin, Github, GraduationCap, Award, Briefcase, User } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
@@ -543,6 +544,24 @@ export function FullStackWorld() {
                   </div>
                 </div>
               </motion.a>
+
+              
+              <motion.a
+                 href="/src/components/CV/Koffi_Amalaman_Christ_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
+                download="Koffi_Amalaman_Christ_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
+                className="fullstack-card group cursor-pointer"
+                whileHover={{ scale: 1.05, x: 10 }}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-pink-500 to-red-500">
+                    <DownloadCloud className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white">Mon cv</p>
+                  </div>
+                </div>
+              </motion.a>
+
 
               <motion.a
                 href="https://linkedin.com"
