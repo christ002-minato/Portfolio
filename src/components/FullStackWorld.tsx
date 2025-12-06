@@ -3,9 +3,13 @@ import { DownloadCloud } from 'lucide-react';
 import { Code, Database, Server, Smartphone, Palette, Boxes, Ticket, Trello, Globe, Mail, Phone, Linkedin, Github, GraduationCap, Award, Briefcase, User } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
-import koffi_amalaman from './assets/Koffi_amalaman.jpeg'
+import KOFFI_amalaman from './assets/KOFFI_amalaman.png'
 import le_groupe from './assets/le_groupe.jpeg'
 import equipe from './assets/equipe.jpeg'
+import project_fullstack_1 from './assets/project-fullstack-1.png';
+import Interfaces_Admin from './assets/Interfaces_Admin.png';
+
+
 
 const techStack = [
   { name: 'React', color: '#61DAFB', icon: Code },
@@ -24,6 +28,7 @@ const techStack = [
 
 const projects = [
   {
+    image: project_fullstack_1,
     title: 'Plateforme de Réservation Concert',
     description: 'Application complète de réservation de billets de concert avec paiement intégré',
     tech: ['Next.js', 'MongoDB', 'Node.js', 'TailwindCSS'],
@@ -31,6 +36,7 @@ const projects = [
     gradient: 'from-purple-500 to-pink-500'
   },
   {
+    image: le_groupe,
     title: 'Trello Clone Mobile',
     description: 'Application mobile de gestion de tâches avec intégration API Trello',
     tech: ['React Native', 'Tailwind', 'API Trello'],
@@ -38,6 +44,7 @@ const projects = [
     gradient: 'from-blue-500 to-cyan-500'
   },
   {
+    image: Interfaces_Admin,
     title: 'Applications PHP Full-Stack',
     description: 'Projets académiques front/back avec interfaces modernes',
     tech: ['PHP', 'MySQL', 'HTML/CSS', 'JavaScript'],
@@ -155,7 +162,7 @@ export function FullStackWorld() {
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <ImageWithFallback
-                  src={koffi_amalaman}
+                  src={KOFFI_amalaman}
                   alt="Koffi Amalaman Christ"
                   className="w-full h-full object-cover"
                 />
@@ -178,7 +185,7 @@ export function FullStackWorld() {
           </motion.div>
 
           <h1 className="text-6xl mb-4 text-white">
-            Koffi Amalaman Christ
+            KOFFI Amalaman Christ
           </h1>
 
           <div className="relative inline-block">
@@ -215,7 +222,7 @@ export function FullStackWorld() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="md:col-span-2 space-y-4 text-white/90">
                 <p>
-                  Développeur Full-Stack passionné, je combine créativité et expertise technique
+                  Développeur Full-Stack passionné, je combine créativité, travail d'équipe et expertise technique
                   pour créer des applications web modernes, performantes et user-friendly.
                   Actuellement en formation intensive chez Wecode.
                 </p>
@@ -418,7 +425,7 @@ export function FullStackWorld() {
                 {/* Project Image */}
                 <div className="relative mb-4 h-48 bg-white/10 rounded-xl border border-white/30 overflow-hidden">
                   <ImageWithFallback
-                    src={`/project-fullstack-${index + 1}.jpg`}
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -547,8 +554,8 @@ export function FullStackWorld() {
 
               
               <motion.a
-                 href="/src/components/CV/Koffi_Amalaman_Christ_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
-                download="Koffi_Amalaman_Christ_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
+                 href="/src/components/CV/KOFFI_Amalaman_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
+                download="KOFFI_Amalaman_Christ_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
                 className="fullstack-card group cursor-pointer"
                 whileHover={{ scale: 1.05, x: 10 }}
               >

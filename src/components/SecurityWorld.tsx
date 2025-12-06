@@ -4,6 +4,9 @@ import { Shield, Terminal, Lock, Network, Globe, Server, Eye, FileCheck, Mail, P
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
 import koffi_amalaman from './assets/Koffi_amalaman.jpeg';
+import Interfaces_Admin from './assets/Interfaces_Admin.png';
+import project_security from './assets/project-security-1.png';
+import project_security_2 from './assets/project-fullstack-2.png';
 import le_groupe from './assets/le_groupe.jpeg';
 
 
@@ -18,18 +21,21 @@ const skills = [
 
 const projects = [
   {
+    image: project_security_2,
     title: 'CarteVax',
     description: 'Fiche vaccinale numérique sécurisée',
     tech: ['PHP', 'MySQL', 'Sécurité'],
     icon: FileCheck
   },
   {
+    image: Interfaces_Admin,
     title: 'Interfaces Admin PHP',
     description: 'Back-office de gestion utilisateurs',
     tech: ['PHP', 'SQL', 'Admin'],
     icon: Lock
   },
   {
+    image: project_security,
     title: 'Projets Réseaux',
     description: 'Modélisation, sécurité et pratiques Kali',
     tech: ['Kali Linux', 'Réseaux', 'Security'],
@@ -368,7 +374,7 @@ export function SecurityWorld() {
                 {/* Project Image */}
                 <div className="mb-4 h-48 bg-green-400/5 rounded-lg border border-green-400/30 overflow-hidden">
                   <ImageWithFallback
-                    src={`/project-security-${index + 1}.jpg`}
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
