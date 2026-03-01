@@ -1,7 +1,7 @@
 
-  # Interactive Resume Site
+  # Portfolio de Koffi Amalaman
 
-  This is a code bundle for Interactive Resume Site. The original project is available at https://www.figma.com/design/MPotsZszRXYKEooXzrC6Ck/Interactive-Resume-Site.
+  This is a code bundle for Portfolio de Koffi Amalaman. The original project is available at https://www.figma.com/design/MPotsZszRXYKEooXzrC6Ck/Interactive-Resume-Site.
 
   ## Running the code
 

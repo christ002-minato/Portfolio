@@ -7,6 +7,12 @@ import KOFFI_amalaman from './assets/KOFFI_amalaman.png'
 import le_groupe from './assets/le_groupe.jpeg'
 import equipe from './assets/equipe.jpeg'
 import project_fullstack_1 from './assets/project-fullstack-1.png';
+import  pâtisserie_chef_audelia  from './assets/pâtisserie-chef-audelia.png';
+import  image_pave_ivoire  from './assets/image-pave-ivoire.png';
+import  carte_remerciements_mariage  from './assets/carte-remerciements-mariage.png';
+import project_fullstack_2 from './assets/project-fullstack-2.png';
+import project_security_1 from './assets/project-security-1.png';
+import invitation_mariage from './assets/invitation-mariage.png';
 import Interfaces_Admin from './assets/Interfaces_Admin.png';
 
 
@@ -50,6 +56,42 @@ const projects = [
     tech: ['PHP', 'MySQL', 'HTML/CSS', 'JavaScript'],
     icon: Code,
     gradient: 'from-orange-500 to-red-500'
+  },
+  {
+    image: carte_remerciements_mariage,
+    title: 'Carte de Remerciement Mariage Augustin & Chantal',
+    description: 'Carte de remerciement élégante pour le mariage, développée en HTML, CSS et JavaScript',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    icon: Mail,
+    gradient: 'from-pink-500 to-rose-500',
+    link: 'https://carte-de-remerciement-y31u.vercel.app/'
+  },
+  {
+    image: invitation_mariage,
+    title: 'Carte d\'Invitation Mariage Augustin & Chantal',
+    description: 'Carte d\'invitation interactive avec formulaire Google Sheets et réponses automatiques',
+    tech: ['Vite', 'React', 'TypeScript', 'Google Sheets'],
+    icon: Mail,
+    gradient: 'from-purple-500 to-indigo-500',
+    link: 'https://wedding-invitation-jhkv.vercel.app'
+  },
+  {
+    image: pâtisserie_chef_audelia,
+    title: 'Site Pâtisserie Chef Audelia',
+    description: 'Site promotionnel pour pâtisserie avec commande via WhatsApp',
+    tech: ['HTML', 'Tailwind CSS', 'JavaScript', 'WhatsApp API'],
+    icon: Boxes,
+    gradient: 'from-yellow-500 to-orange-500',
+    link: 'https://restauration-tau.vercel.app/'
+  },
+  {
+    image: image_pave_ivoire,
+    title: 'Refonte Site Pave Ivoire',
+    description: 'Refonte complète du site Pave Ivoire avec technologies modernes',
+    tech: ['Vite', 'React', 'TypeScript'],
+    icon: Globe,
+    gradient: 'from-green-500 to-teal-500',
+    link: 'https://refonte-paveivoire.vercel.app/'
   }
 ];
 
@@ -67,9 +109,6 @@ export function FullStackWorld() {
     >
       {/* Navigation Left */}
       <Navigation theme="fullstack" position="left" />
-
-      {/* Navigation Right */}
-      <Navigation theme="fullstack" position="right" />
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -416,6 +455,7 @@ export function FullStackWorld() {
                   rotateY: 5,
                   transition: { duration: 0.3 }
                 }}
+                onClick={() => project.link && window.open(project.link, '_blank')}
               >
                 {/* Gradient Background */}
                 <div

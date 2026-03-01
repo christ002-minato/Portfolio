@@ -54,9 +54,6 @@ export function SecurityWorld() {
     >
       {/* Navigation Left */}
       <Navigation theme="security" position="left" />
-      
-      {/* Navigation Right */}
-      <Navigation theme="security" position="right" />
 
       {/* Animated Background Grid */}
       <div className="absolute inset-0 overflow-hidden">
