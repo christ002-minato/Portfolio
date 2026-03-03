@@ -3,7 +3,7 @@ import { DownloadCloud } from 'lucide-react';
 import { Shield, Terminal, Lock, Network, Globe, Server, Eye, FileCheck, Mail, Phone, MapPin, Linkedin, Github, GraduationCap, Award, Calendar } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
-import koffi_amalaman from './assets/Koffi_amalaman.png';
+import koffi_amalaman from './assets/KOFFI_amalaman.png';
 import Interfaces_Admin from './assets/Interfaces_Admin.png';
 import project_security from './assets/project-security-1.png';
 import project_security_2 from './assets/project-fullstack-2.png';
