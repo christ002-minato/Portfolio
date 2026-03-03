@@ -3,7 +3,7 @@ import { DownloadCloud } from 'lucide-react';
 import { Shield, Terminal, Lock, Network, Globe, Server, Eye, FileCheck, Mail, Phone, MapPin, Linkedin, Github, GraduationCap, Award, Calendar } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Navigation } from './Navigation';
-import koffi_amalaman from './assets/Koffi_amalaman.jpeg';
+import koffi_amalaman from './assets/Koffi_amalaman.png';
 import Interfaces_Admin from './assets/Interfaces_Admin.png';
 import project_security from './assets/project-security-1.png';
 import project_security_2 from './assets/project-fullstack-2.png';
@@ -454,8 +454,8 @@ export function SecurityWorld() {
 
              
               <motion.a
-                 href="/src/components/CV/Koffi_Amalaman_Christ_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
-                download="Koffi_Amalaman_Christ_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
+                 href="/src/components/CV/KOFFI_Amalaman_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
+                download="KOFFI_Amalaman_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
                 className="cyber-card group cursor-pointer"
                 whileHover={{ scale: 1.05, x: 10 }}
               >
