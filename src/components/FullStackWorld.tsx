@@ -594,7 +594,7 @@ export function FullStackWorld() {
 
               
               <motion.a
-                 href="./assets/CV/KOFFI_Amalaman_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
+                 href="./assets/KOFFI_Amalaman_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
                 download="KOFFI_Amalaman_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
                 className="fullstack-card group cursor-pointer"
                 whileHover={{ scale: 1.05, x: 10 }}
