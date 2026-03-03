@@ -14,6 +14,7 @@ import project_fullstack_2 from './assets/project-fullstack-2.png';
 import project_security_1 from './assets/project-security-1.png';
 import invitation_mariage from './assets/invitation-mariage.png';
 import Interfaces_Admin from './assets/Interfaces_Admin.png';
+import cvPDF from './assets/CV/KOFFI_Amalaman_CV.pdf';
 
 
 
@@ -594,8 +595,8 @@ export function FullStackWorld() {
 
               
               <motion.a
-                 href="./assets/KOFFI_Amalaman_CV.pdf" // Chemin vers votre fichier CV (modifiez si le nom ou le chemin est différent)
-                download="KOFFI_Amalaman_CV.pdf" // Nom sous lequel le fichier sera enregistré par l'utilisateur
+                 href={cvPDF}
+                download="KOFFI_Amalaman_CV.pdf"
                 className="fullstack-card group cursor-pointer"
                 whileHover={{ scale: 1.05, x: 10 }}
               >
