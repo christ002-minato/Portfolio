@@ -45,6 +45,9 @@ const projects = [
 ];
 
 export function SecurityWorld() {
+  // sort projects by link presence (none currently have links)
+  const sortedProjects = [...projects].sort((a, b) => (b.link ? 1 : 0) - (a.link ? 1 : 0));
+
   return (
     <motion.div
       className="w-full min-h-screen bg-black relative"
@@ -360,7 +363,7 @@ export function SecurityWorld() {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {projects.map((project, index) => (
+            {sortedProjects.map((project, index) => (
               <motion.div
                 key={project.title}
                 className="cyber-project-card group cursor-pointer"
